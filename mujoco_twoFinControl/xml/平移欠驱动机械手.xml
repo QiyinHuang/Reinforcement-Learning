@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/28/22||10:57:40" using="Simscape Multibody Link Version 7.4" from="SolidWorks 28.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="平移欠驱动机械手" uid="平移欠驱动机械手" version="167">
+<AssemblyFile name="平移欠驱动机械手.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="滑块-1" uid="滑块-1" entityUid="滑块*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.00029595067402504553 -0.002499999999998258 0.34792577236113287</Translation>
+</Transform>
+</Instance>
+<Instance name="远端指节-1" uid="远端指节-1" entityUid="远端指节*:*默认">
+<Transform>
+<Rotation>-1 6.9829626776862667e-15 0 0 1.04744440165294e-14 1 6.9829626776862667e-15 1 -1.04744440165294e-14</Rotation>
+<Translation>0.00029595067402613396 0.071469464895362753 0.15382227878397409</Translation>
+</Transform>
+</Instance>
+<Instance name="近端指节-1" uid="近端指节-1" entityUid="近端指节*:*默认">
+<Transform>
+<Rotation>1 0 0 0 -0.51598505136394246 0.85659758741718972 0 -0.85659758741718972 -0.51598505136394246</Rotation>
+<Translation>0.00029595067402504553 0.022352780699339259 0.17858956124944275</Translation>
+</Transform>
+</Instance>
+<Instance name="导轨-1" uid="导轨-1" grounded="true" entityUid="导轨*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.00029595067402504553 1.7444396268145841e-15 0.125</Translation>
+</Transform>
+</Instance>
+<Instance name="滑块-2" uid="滑块-2" entityUid="滑块*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.00029595067402504553 -0.002499999999998258 0.17521744166035427</Translation>
+</Transform>
+</Instance>
+<Instance name="远端指节-2" uid="远端指节-2" entityUid="远端指节*:*默认">
+<Transform>
+<Rotation>1 0 0 0 -0.45898059050062118 0.88844629412458098 0 -0.88844629412458098 -0.45898059050062118</Rotation>
+<Translation>0.00029595067402503794 0.071339268533510275 0.32416368312129412</Translation>
+</Transform>
+</Instance>
+<Instance name="近端指节-2" uid="近端指节-2" entityUid="近端指节*:*默认">
+<Transform>
+<Rotation>-1 0 -1.221265320120603e-16 -1.017949417669165e-16 0.49268293778274586 0.87020889608056928 0 0.87020889608056928 -0.49268293778274586</Rotation>
+<Translation>0.00029595067402504911 0.022461671168646301 0.35148430885887089</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="重合1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>导轨-1</Uid>
+</InstancePath>
+<Position>-0.0099999999999999985 0.0034999999999999996 0.25</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>滑块-1</Uid>
+</InstancePath>
+<Position>0.0099999999999999985 0.0060000000000000019 0.015000000000000013</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>导轨-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>滑块-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>导轨-1</Uid>
+</InstancePath>
+<Position>-0.0099999999999999985 0.0034999999999999996 0.25</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>滑块-2</Uid>
+</InstancePath>
+<Position>0.0099999999999999985 0.0060000000000000019 0.014999999999999986</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="重合4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>导轨-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>滑块-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>滑块-2</Uid>
+</InstancePath>
+<Position>-0.0099999999999999985 0.018000000000000002 0.0075000000000000067</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>近端指节-1</Uid>
+</InstancePath>
+<Position>-0.014499999999999999 0 -0.0080000000000000071</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>滑块-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>近端指节-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>近端指节-1</Uid>
+</InstancePath>
+<Position>0.018485281374238577 0 0.048000000000000015</Position>
+<Axis>-1 1.1564823173178717e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>远端指节-1</Uid>
+</InstancePath>
+<Position>0.014499999999999999 0 -0.0079999999999999932</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>近端指节-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>远端指节-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>远端指节-2</Uid>
+</InstancePath>
+<Position>0.014499999999999999 1.1102230246251565e-16 -0.0079999999999999793</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>近端指节-2</Uid>
+</InstancePath>
+<Position>0.018485281374238573 0 0.047999999999999987</Position>
+<Axis>-1 1.1564823173178715e-16 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>远端指节-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>近端指节-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>滑块-1</Uid>
+</InstancePath>
+<Position>-0.0099999999999999985 0.018000000000000002 0.0075000000000000067</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>近端指节-2</Uid>
+</InstancePath>
+<Position>0.014499999999999999 0 -0.0080000000000000071</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>滑块-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>近端指节-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="导轨" uid="导轨*:*默认" version="154">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="导轨.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.037999999999999992</Mass>
+<CenterOfMass>0 0 0.125</CenterOfMass>
+<Inertia>0.00023124558333333339 0.00023238958333333338 1.501833333333334e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="导轨_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="滑块" uid="滑块*:*默认" version="196">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="滑块.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0045008295949990479</Mass>
+<CenterOfMass>0 0.010559704984785794 0.0075000000000000006</CenterOfMass>
+<Inertia>2.6074626441705769e-07 6.4754542441103774e-07 7.3846354508905207e-07 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="滑块_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="近端指节" uid="近端指节*:*默认" version="206">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="近端指节.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.023705116715941135</Mass>
+<CenterOfMass>0 0.00014245944629174426 0.018494793079480133</CenterOfMass>
+<Inertia>7.1396466286323435e-06 8.4887780043546495e-06 2.2586693467766035e-06 -1.0635506514407089e-07 2.0222649816151875e-11 7.031250000010563e-11</Inertia>
+</MassProperties>
+<GeometryFile name="近端指节_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="远端指节" uid="远端指节*:*默认" version="205">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="远端指节.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.02135702967008455</Mass>
+<CenterOfMass>0 -4.7008164528013597e-05 0.015383816815180236</CenterOfMass>
+<Inertia>4.9215690114444915e-06 5.9833273574200673e-06 1.8294810722363135e-06 2.4414540659239228e-08 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="远端指节_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.88" g="0.88" b="0.88" a="1"/>
+<Emissive r="0.20999999999999999" g="0.20999999999999999" b="0.20999999999999999" a="1"/>
+<Shininess>0.20999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
